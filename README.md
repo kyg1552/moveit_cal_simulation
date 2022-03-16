@@ -25,8 +25,8 @@ The simulation also requires Gazebo:
 
 Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
 
-    mkdir -p ~/ws_moveit_cal/src
-    cd ~/ws_moveit_cal/src
+    mkdir -p ~/catkin_ws/src
+    cd ~/catkin_ws/src
     wstool init .
     wstool merge -t . https://raw.githubusercontent.com/JStech/moveit_cal_simulation/main/moveit_cal_simulation.rosinstall
     wstool update -t .
@@ -34,7 +34,7 @@ Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
 
 Configure and build:
 
-    cd ~/ws_moveit_cal
+    cd ~/catkin_ws
     catkin_make
     roslaunch rb5_moveit_config demo.launch
 
