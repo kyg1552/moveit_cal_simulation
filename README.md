@@ -16,12 +16,12 @@ below assume you have OpenCV 3.4 installed in `/usr/local/`. OpenCV 3.4 can be e
 ### Downloading and building MoveIt Calibration and simulation packages
 If you haven't already, install `catkin`:
 
-    sudo apt install ros-melodic-catkin python-catkin-tools
+    sudo apt install ros-noetic-catkin python-catkin-tools
 
 The simulation also requires Gazebo:
 
-    sudo apt install ros-melodic-gazebo-ros ros-melodic-gazebo-plugins ros-melodic-gazebo-ros-control \
-      ros-melodic-joint-state-controller ros-melodic-position-controllers ros-melodic-joint-trajectory-controller
+    sudo apt install ros-noetic-gazebo-ros ros-noetic-gazebo-plugins ros-noetic-gazebo-ros-control \
+      ros-noetic-joint-state-controller ros-noetic-position-controllers ros-noetic-joint-trajectory-controller
 
 Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
 
@@ -30,13 +30,12 @@ Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
     wstool init .
     wstool merge -t . https://raw.githubusercontent.com/JStech/moveit_cal_simulation/main/moveit_cal_simulation.rosinstall
     wstool update -t .
-    rosdep install -y --from-paths . --ignore-src --rosdistro melodic
+    rosdep install -y --from-paths . --ignore-src --rosdistro noetic
 
 Configure and build:
 
     cd ~/ws_moveit_cal
-    catkin config --extend /opt/ros/melodic --cmake-args -DOpenCV_DIR=/usr/local/share/OpenCV -DCMAKE_BUILD_TYPE=Release
-    catkin build
-    roslaunch panda_moveit_config demo_gazebo.launch
+    catkin_make
+    roslaunch rb5_moveit_config demo.launch
 
 From there, follow [the tutorial](https://ros-planning.github.io/moveit_tutorials/doc/hand_eye_calibration/hand_eye_calibration_tutorial.html).
