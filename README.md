@@ -28,7 +28,7 @@ Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
     mkdir -p ~/catkin_ws/src
     cd ~/catkin_ws/src
     wstool init .
-    wstool merge -t . https://raw.githubusercontent.com/JStech/moveit_cal_simulation/main/moveit_cal_simulation.rosinstall
+    wstool merge -t . https://raw.githubusercontent.com/kyg1552/moveit_cal_simulation/main/moveit_cal_simulation.rosinstall
     wstool update -t .
     rosdep install -y --from-paths . --ignore-src --rosdistro noetic
 
