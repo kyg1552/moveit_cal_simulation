@@ -16,7 +16,7 @@ below assume you have OpenCV 3.4 installed in `/usr/local/`. OpenCV 3.4 can be e
 ### Downloading and building MoveIt Calibration and simulation packages
 If you haven't already, install `catkin`:
 
-    sudo apt install ros-noetic-catkin python-catkin-tools
+    sudo apt install ros-noetic-catkin python3-catkin-tools
 
 The simulation also requires Gazebo:
 
