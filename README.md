@@ -35,8 +35,8 @@ Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
 Configure and build:
 
     cd ~/catkin_ws
+    sudo apt-get install ros-noetic-moveit*****
     catkin_make
-    sudo apt-get install ros-noetic-moveit*
     roslaunch rb5_moveit_config demo.launch
 
 From there, follow [the tutorial](https://ros-planning.github.io/moveit_tutorials/doc/hand_eye_calibration/hand_eye_calibration_tutorial.html).
