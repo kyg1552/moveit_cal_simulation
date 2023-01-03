@@ -35,7 +35,7 @@ Set up a new workspace using the included `moveit_cal_simulation.rosinstall`:
 Configure and build:
 
     cd ~/catkin_ws
-    sudo apt-get install ros-noetic-moveit*****
+    sudo apt-get install ros-noetic-moveit*
     catkin_make
     roslaunch rb5_moveit_config demo.launch
 
