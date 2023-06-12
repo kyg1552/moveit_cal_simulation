@@ -1,6 +1,11 @@
 Running MoveIt Calibration in simulation
 ========================================
 
+### 출처
+* https://github.com/JStech/moveit_cal_simulation
+* ROS noetic 버전 및 RB5를 사용하도록 재구성
+
+
 ### Available on Docker
 If you prefer, you can skip the steps below and use the [Docker
 image](https://hub.docker.com/repository/docker/jstechschulte/moveit_calibration_simulation)
